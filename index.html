@@ -28,7 +28,7 @@ toHour=21;
 toMinute=00;
 toSecond=00;
  
-function countDown()
+setInterval(function countDown()
 {
 	new_year=0;
 	new_month=0;
@@ -107,10 +107,9 @@ function countDown()
 		}else{
 			form.year.value=new_year;
 			//vuelve a ejecutar la funcion dentro de 1000 milisegundos = 1 segundo
-			setTimeout("countDown()",1000);
 		}
 	}
-}
+}, 1000);
 </script>
  
 
